@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<body>
+<h1>Sort arrays</h1>
+
+
+<strong>sort()</strong>
+<script>
+    var arr1 = new Array(5,3,4,2,0,1);
+    arr1.sort();
+    var list = arr1.join(" - ");
+    document.write("<p>sort(): " + arr1 + "</p>");
+    console.log("sort():");
+    console.log(arr1);
+
+</script>
+
+<strong>sort() with callback</strong>
+<script>
+    var arr1 = new Array(5,3,4,2,0,1);
+    function desc(a,b){
+        if(a > b){
+            return -1;
+        }
+        if(a < b){
+            return 1;
+        }
+        if(a === b){
+            return 0;
+        }
+    }
+
+    arr1.sort(desc);
+    var list = arr1.join(" - ");
+    document.write("<p>sort(): " + arr1 + "</p>");
+    console.log("sort():");
+    console.log(arr1);
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

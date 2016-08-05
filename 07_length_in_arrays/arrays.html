@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<body>
+<h1>Length in JS</h1>
+<script>
+    var arr1 = new Array("Red",10,20.4);
+    var arr2 = Array("Blue",12,30.3,arr1);
+    var arr3 = ["orange",10,23.2,arr1,arr2];
+
+    document.write("<p>Arr1: " + arr1.length + "</p>");
+    document.write("<p>Arr2: " + arr2.length + "</p>");
+    document.write("<p>Arr3: " + arr3.length + "</p>");
+
+</script>
+
+<h1>Removing elements</h1>
+<script>
+
+    arr1.length = 2;
+
+    document.write("<p>Arr1: " + arr1[0] + "</p>");
+    document.write("<p>Arr1: " + arr1[1] + "</p>");
+    document.write("<p>Arr1: " + arr1[2] + "</p>");
+
+</script>
+
+</body>
+</html>

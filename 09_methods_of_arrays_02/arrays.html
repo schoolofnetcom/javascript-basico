@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<body>
+<h1>Methods of Arrays</h1>
+
+
+<strong>unshift()</strong>
+<script>
+    var arr1 = new Array("Red",10,20.4);
+    arr1.unshift("New element");
+    var list = arr1.join(" - ");
+    document.write("<p>unshift(): " + arr1 + "</p>");
+    console.log("unshift():");
+    console.log(arr1);
+
+</script>
+
+<strong>slice()</strong>
+<script>
+    var arr1 = new Array("Red",10,20.4,"New element");
+    var newArray = arr1.slice(0,2);
+
+    var list = newArray.join(" - ");
+    document.write("<p>slice(): " + newArray + "</p>");
+    console.log("slice():");
+    console.log(newArray);
+
+</script>
+
+<strong>splice()</strong>
+<script>
+    var arr1 = new Array("Red",10,20.4,"New element");
+    arr1.splice(1,2,"A","B","C","D");
+
+    var list = arr1.join(" - ");
+    document.write("<p>splice(): " + arr1 + "</p>");
+    console.log("splice():");
+    console.log(arr1);
+
+</script>
+
+<strong>reverse()</strong>
+<script>
+    var arr1 = new Array("A","B","C","D");
+    arr1.reverse();
+
+    var list = arr1.join(" - ");
+    document.write("<p>reverse(): " + arr1 + "</p>");
+    console.log("reverse():");
+    console.log(arr1);
+
+</script>
+
+
+
+
+
+</body>
+</html>
